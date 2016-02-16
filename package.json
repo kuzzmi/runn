@@ -1,7 +1,7 @@
 {
     "name": "runn",
     "version": "0.0.1",
-    "description": "Tasks scheduler/runner for those at offices with very strict admins",
+    "description": "Hastily developed Node.js tasks scheduler/runner for those at offices with very strict admins",
     "main": "index.js",
     "scripts": {
         "start": "node index.js",
