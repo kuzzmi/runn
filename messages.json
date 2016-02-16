@@ -1,0 +1,4 @@
+{
+    "ENOENT": "ERROR: Configuration file is not found. Please create .runnrc in your home folder.",
+    "BADCFG": "ERROR: There is a problem with you configuration file. Please fix the issue and try again."
+}
