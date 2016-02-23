@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var fs = require('fs');
 var path = require('path');
 var messages = require('./messages.json');
@@ -21,6 +23,9 @@ function readConfigFile(callback) {
     fs.readFile(getConfigFilePath(), callback);
 }
 
+/*
+ *  Entry point function
+ */
 function run() {
     readConfigFile(function(err, contents) {
         var config;
@@ -53,7 +58,7 @@ function run() {
                     console.log('ERR: ' + data);
                 });
                 task.stdout.on('data', function(data) {
-                    console.log('OUT: ' + data);
+                    console.log(data);
                 });
             },
             start: true
@@ -62,16 +67,3 @@ function run() {
 }           
 
 run();
-
-// var job = new CronJob({
-//     cronTime: '00 30 11 * * 1-5',
-//     onTick: function() {
-//         #<{(|
-//          * Runs every weekday (Monday through Friday)
-//          * at 11:30:00 AM. It does not run on Saturday
-//          * or Sunday.
-//          |)}>#
-//     },
-//     start: false
-// });
-// job.start();
