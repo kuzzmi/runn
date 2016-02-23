@@ -1,5 +1,5 @@
 {
-  "name": "runn",
+  "name": "runnjs",
   "version": "0.0.2",
   "description": "Hastily developed Node.js tasks scheduler/runner for those at offices with very strict admins",
   "main": "index.js",
@@ -11,6 +11,8 @@
   "keywords": [
     "task",
     "runner",
+    "planning",
+    "task scheduler",
     "task",
     "schedule",
     "cron"
