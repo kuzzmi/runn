@@ -1,22 +1,22 @@
 {
-    "name": "runn",
-    "version": "0.0.1",
-    "description": "Hastily developed Node.js tasks scheduler/runner for those at offices with very strict admins",
-    "main": "index.js",
-    "scripts": {
-        "start": "node index.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-        "task",
-        "runner",
-        "task",
-        "schedule",
-        "cron"
-    ],
-    "author": "Igor Kuzmenko",
-    "license": "MIT",
-    "dependencies": {
-        "cron": "^1.1.0"
-    }
+  "name": "runn",
+  "version": "0.0.2",
+  "description": "Hastily developed Node.js tasks scheduler/runner for those at offices with very strict admins",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "task",
+    "runner",
+    "task",
+    "schedule",
+    "cron"
+  ],
+  "author": "Igor Kuzmenko",
+  "license": "MIT",
+  "dependencies": {
+    "cron": "^1.1.0"
+  }
 }
