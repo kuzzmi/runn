@@ -1,6 +1,6 @@
 {
   "name": "runnjs",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Hastily developed Node.js tasks scheduler/runner for those at offices with very strict admins",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-      "runn": "./bin/runn"
+    "runn": "./bin/runn"
   },
   "repository": "https://github.com/kuzzmi/runn",
   "keywords": [
