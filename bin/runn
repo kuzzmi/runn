@@ -1,2 +1,19 @@
 #!/usr/bin/env node
-require('../lib/index.js')
+
+// var Service = require('node-windows').Service;
+//
+// var svc = new Service({
+//     name: 'runn',
+//     script: require('path').join(__dirname, '../lib/index.js')
+// });
+//
+// svc.on('install', function() {
+//     svc.start();
+// });
+//
+// svc.on('error', function() {
+//     console.log('Error :(');
+// });
+//
+// svc.install();
+require('../lib/index.js');
