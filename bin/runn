@@ -1,19 +1,30 @@
 #!/usr/bin/env node
 
-// var Service = require('node-windows').Service;
-//
-// var svc = new Service({
-//     name: 'runn',
-//     script: require('path').join(__dirname, '../lib/index.js')
-// });
-//
-// svc.on('install', function() {
-//     svc.start();
-// });
-//
-// svc.on('error', function() {
-//     console.log('Error :(');
-// });
-//
-// svc.install();
-require('../lib/index.js');
+var program = require('commander');
+var config = require('../package');
+
+program
+    .version(config.version)
+    // .option('-i, --install', 'install runn as a daemon', install)
+    .option('-r, --run', 'run runn and hang in the foreground (helpful, if you have absolutely NO control over you PC)', run)
+    .parse(process.argv);
+
+function run() {
+    require('../lib/index.js');
+}
+
+function install() {
+    var Service = require('node-windows').Service;
+
+    var svc = new Service({
+        name: 'runn',
+        script: require('path').join(__dirname, '../lib/index.js')
+    });
+
+    svc.on('install', svc.start);
+    svc.on('error', function() {
+        console.log('Error :(');
+    });
+
+    svc.install();
+}

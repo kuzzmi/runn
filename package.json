@@ -23,6 +23,10 @@
   "author": "Igor Kuzmenko",
   "license": "MIT",
   "dependencies": {
-    "cron": "^1.1.0"
+    "commander": "^2.9.0",
+    "cron": "^1.1.0",
+    "node-windows": "^0.1.11",
+    "node-linux": "^0.1.7",
+    "node-mac": "^0.1.11"
   }
 }
