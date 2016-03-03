@@ -6,7 +6,7 @@ var config = require('../package');
 program
     .version(config.version)
     // .option('-i, --install', 'install runn as a daemon', install)
-    .option('-r, --run', 'run runn and hang in the foreground (helpful, if you have absolutely NO control over you PC)', run)
+    .option('-f, --foreground', 'run in the foreground (the only working way, if you have absolutely NO control over you PC)', run)
     .parse(process.argv);
 
 function run() {
